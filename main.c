@@ -17,6 +17,7 @@
 #define METADATA_SIZE                   18
 #define SPECIAL_KEY_A                   1
 #define SPECIAL_KEY_B                   0
+
 typedef enum {
     PAGE_SIZE_OFFSET            =       0,
     NUM_OF_PAGES_OFFSET         =       4,
@@ -35,6 +36,7 @@ typedef enum {
     SPECIAL_KEY_RESET_FLAG      =       0
 } KEY_VALUE_METADATA;
 
+
 typedef struct {
     uint8_t *arr;
     int page_size;
@@ -43,7 +45,6 @@ typedef struct {
 
 
 // utils
-
 /**
  * Encoding
  * @param data: the integer value to be converted
@@ -69,6 +70,7 @@ int bytes_to_int(const uint8_t *byte_array) {
     
     return data;
 }
+
 
 void delete_hashmap (HashMap **hashmap) {
     if (*hashmap != NULL) {
@@ -232,6 +234,7 @@ void dump(const HashMap *hashmap) {
     }
     printf("\n");
 }
+
 
 
 
