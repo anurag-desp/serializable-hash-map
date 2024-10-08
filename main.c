@@ -12,7 +12,7 @@
 #include <string.h>
 #include <errno.h>
 
-#define PUT_NEWLINE                     printf("\n");
+#define PUT_NEWLINE                     printf("\n")
 #define MAX_COMMAND_LENGTH              10
 #define METADATA_SIZE                   18
 #define SPECIAL_KEY_A                   1
